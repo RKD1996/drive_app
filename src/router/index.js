@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import AI from '@/components/AllItems.vue'
+import VF from '@/components/ViewFiles.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  }
+{
+  path: '/',
+  component: AI
+},
+{
+  path: '/:id',
+  name: 'viewfile',
+  component: VF,
+  props: {id: true}
+}
+
 ]
 
 const router = new VueRouter({

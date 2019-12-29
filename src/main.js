@@ -7,17 +7,17 @@ import 'firebase/firestore'
 
 Vue.config.productionTip = false
 
-var config = {
-    apiKey: "AIzaSyDw2MYn4KMjIgLqlwoWhLuybdFF6nAbWfI",
-    authDomain: "test-e2bde.firebaseapp.com",
-    databaseURL: "https://test-e2bde.firebaseio.com",
-    projectId: "test-e2bde",
-    storageBucket: "test-e2bde.appspot.com",
-    messagingSenderId: "668845510040",
-    appId: "1:668845510040:web:c056e9dade4d03ceb46fed"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(config);
+var firebaseConfig = {
+   apiKey: "AIzaSyDKo1Cw2Oii6J6LyPspmVz0dTakTut3jd8",
+   authDomain: "match-maker-3c0c7.firebaseapp.com",
+   databaseURL: "https://match-maker-3c0c7.firebaseio.com",
+   projectId: "match-maker-3c0c7",
+   storageBucket: "match-maker-3c0c7.appspot.com",
+   messagingSenderId: "700032089783",
+   appId: "1:700032089783:web:38239e6c46d652e9fe9732"
+ };
+ // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
 
 new Vue({
   router,
